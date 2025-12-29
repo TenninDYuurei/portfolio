@@ -1,9 +1,11 @@
-import FirstSection from "./firstSection/FirstSection";
+import FirstSection from "./components/firstSection/FirstSection";
+import SecondSection from "./components/secondSection/SecondSection";
 
 const App: React.FC = () => {
   return (
-    <div className="w-screen h-screen bg-primary-black">
+    <div className="w-full min-h-screen bg-primary-black ">
       <FirstSection/>
+      <SecondSection/>
     </div>
   );
 }

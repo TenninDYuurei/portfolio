@@ -3,7 +3,7 @@ import { links } from "../utils"
 
 const QuickLinks = () => {
     return (
-        <div className="flex gap-4 items-center justify-center">
+        <div className="flex flex-wrap gap-4 items-center justify-center">
             {links.map((link, index) => (
                 <a
                     className="text-primary-gold visited:text-primary-gold"

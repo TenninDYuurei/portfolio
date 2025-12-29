@@ -7,4 +7,7 @@ const links: LinkTypes[] = [
     { title: "GitHub", link: ""},
 ]
 
-export {links,}
+const skills =['copywriting','digital marketing', 'AI', 'graphics','SEO', 'SEM', 'communication skills', 'results-driven', 'teamwork', 'adaptability', 'problem-solving', 'time management']
+
+
+export {links,skills}
