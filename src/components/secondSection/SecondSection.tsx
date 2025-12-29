@@ -15,7 +15,7 @@ const SecondSection = () => {
 
     return (
         <div className="w-full flex p-4 items-center flex-col bg-dark-black gap-3">
-            <h3 className="text-xl sm:text-2xl md:text-3xl">About Me</h3>
+            <h3 className="text-xl sm:text-2xl md:text-3xl text-primary-gold font-bold pb-3">About Me</h3>
             <div className="flex flex-col justify-center sm:flex-row max-w-6xl gap-3">
                 <div className="w-full md:w-1/3 flex flex-col items-center gap-2">
                     <button className={`${currentInfo === 'bio' ? 'text-white border-white' : 'border-primary-gold text-primary-gold'} border bg-dark-black w-48 hover:border-primary-gold focus:border-primary-gold`}
