@@ -40,7 +40,7 @@ const Certifications: React.FC<Props> = ({
     };
 
     const imgStyle: React.CSSProperties = {
-        width: "100%",
+        width: "100vw",
         height: "100%",
         objectFit: "cover",
         display: "block",
