@@ -20,7 +20,7 @@ const FirstSection = () => {
                 </div> */}
 
                 {/* TEXT SECTION */}
-                <div className="w-full flex flex-col justify-center px-2 md:w-1/2 gap-3">
+                <div className="w-full flex flex-col justify-center px-2 md:w-1/2 gap-3 text-center sm:text-left">
                     <h1 className="font-orbitron text-primary-gold text-lg sm:text-2xl lg:text-3xl">Hi, I'm Joseph 👋<br /> Your Friendly Neighborhood Tech Bro 😎</h1>
                     {/* BIG TEXT SECTION */}
                     <h2 className="text-white text-xl sm:text-3xl lg:text-5xl font-bold font-orbitron">Web Developer (MERN)</h2>
@@ -33,7 +33,7 @@ const FirstSection = () => {
                     download
                     href={myCv}
                     type="button" 
-                    className="w-fit bg-primary-gold text-black hover:text-white font-sans glassmorphic p-2 rounded-xl ">Download CV</a>
+                    className="w-fit bg-primary-gold text-black hover:text-white font-sans glassmorphic p-2 rounded-xl self-center sm:self-start">Download CV</a>
                 </div>
             </div>
         </div>
