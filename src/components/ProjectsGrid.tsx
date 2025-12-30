@@ -35,7 +35,7 @@ const projects: Project[] = [
         title: "Photo by Vitaly Gariev on Unsplash",
         description: "I worked with a team to build a complex website for a telemedicine corporation, however due to an NDA i can't provide any links.",
         image: telemedicinePic,
-        url: "#",
+        // no url so clicking does nothing
     },
 ];
 
@@ -45,6 +45,7 @@ const ProjectsGrid: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {projects.map((p) => (
                     <a
+                        target="_blank"
                         key={p.title}
                         href={p.url}
                         className="group block relative overflow-hidden rounded-lg shadow-lg"
