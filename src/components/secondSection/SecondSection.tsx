@@ -43,9 +43,9 @@ const SecondSection = () => {
                 <motion.div
                     className="w-full md:w-2/3 items-center justify-start p-4 bg-primary-black/60 rounded-xl glassmorphic"
                     key={currentInfo}
-                    initial={{ opacity: 0, y: 8, scale: 0.995 }}
+                    initial={{ opacity: 0, y: 20, scale: 0.995 }}
                     animate={{ opacity: 1, y: 0, scale: 1 }}
-                    transition={{ duration: 0.35, ease: "easeOut" }}
+                    transition={{ duration: 0.35, ease: "linear" }}
                 >
                     {
                         currentInfo === 'bio' && (
