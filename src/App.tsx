@@ -6,7 +6,7 @@ import ThirdSection from "./components/thirdSection/ThirdSection";
 
 const App: React.FC = () => {
   return (
-    <div className="w-full min-h-screen bg-primary-black font-roboto text-[#ffffff]">
+    <div className="w-full min-h-screen bg-primary-black font-roboto overflow-hidden text-[#ffffff]">
       <FirstSection/>
       <SecondSection/>
       <ThirdSection/>

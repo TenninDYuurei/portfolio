@@ -8,6 +8,7 @@ import bh from "@/assets/images/bh1.png";
 import bhTwo from "@/assets/images/bh2.png";
 import gtMetrixOne from "@/assets/images/gtMetrixStats.png"
 import gtMetrixTwo from "@/assets/images/gtMetrixStats2.png"
+import ReusableSLideLeftAnimationWrapper from "./reusbleSLideLeftAnimationWrapper";
 
 type Project = {
     title: string;
@@ -133,7 +134,12 @@ const CarouselProjects: React.FC = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {projects.map((p) => (
-                    <SlideCard key={p.title} project={p} />
+                    <ReusableSLideLeftAnimationWrapper 
+                    direction="right"
+                    key={p.title}
+                    >
+                        <SlideCard project={p} />
+                    </ReusableSLideLeftAnimationWrapper>
                 ))}
             </div>
         </div>

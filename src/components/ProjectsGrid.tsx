@@ -3,6 +3,7 @@ import dee from "@/assets/images/deesEmporium.png"
 import longNight from "@/assets/images/longNight.png"
 import buildhive from "@/assets/images/buildhive.png"
 import telemedicinePic from "@/assets/images/vitaly-gariev-EVX9pt2dD1o-unsplash.jpg"
+import ReusbleSLideLeftAnimationWrapper from "./reusbleSLideLeftAnimationWrapper";
 
 
 type Project = {
@@ -44,27 +45,30 @@ const ProjectsGrid: React.FC = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {projects.map((p) => (
-                    <a
-                        target="_blank"
-                        key={p.title}
-                        href={p.url}
-                        className="group block relative overflow-hidden rounded-lg shadow-lg"
+                    <ReusbleSLideLeftAnimationWrapper
+                            key={p.title}
                     >
-                        <img
-                            src={p.image}
-                            alt={p.title}
-                            className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
-                        />
+                        <a
+                            target="_blank"
+                            href={p.url}
+                            className="group block relative overflow-hidden rounded-lg shadow-lg"
+                        >
+                            <img
+                                src={p.image}
+                                alt={p.title}
+                                className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+                            />
 
-                        <div className="absolute inset-0 flex items-end">
-                            <div className="w-full p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                                <div className="backdrop-blur-md bg-dark-black/30 dark:bg-gray-900/40 border border-white/20 rounded-lg p-4">
-                                    <h3 className="text-white text-lg font-semibold drop-shadow">{p.title}</h3>
-                                    <p className="mt-1 text-sm text-white/90 drop-shadow">{p.description}</p>
+                            <div className="absolute inset-0 flex items-end">
+                                <div className="w-full p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                                    <div className="backdrop-blur-md bg-dark-black/30 dark:bg-gray-900/40 border border-white/20 rounded-lg p-4">
+                                        <h3 className="text-white text-lg font-semibold drop-shadow">{p.title}</h3>
+                                        <p className="mt-1 text-sm text-white/90 drop-shadow">{p.description}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </ReusbleSLideLeftAnimationWrapper>
                 ))}
             </div>
         </div>
