@@ -37,7 +37,8 @@ export default function TechStack() {
       {techStack.map((tech) => (
         <span
           key={tech.name}
-          className="flex items-center gap-2 rounded-full border border-white px-4 py-2 text-sm font-medium text-primary-gold hover:scale-110 hover:bg-dark-black transition"
+          className="flex items-center gap-2  px-4 py-2 text-sm  text-primary-gold hover:scale-110 hover:bg-dark-black font-bold  rounded-md border border-white p-2 font-orbitron hover:text-white transition  hover:bg-white/30 glassmorphic
+          "
         >
           <span className="text-base font-bold">{tech.icon}</span>
           {tech.name}

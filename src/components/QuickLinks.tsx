@@ -3,11 +3,12 @@ import { links } from "../utils"
 
 const QuickLinks = () => {
     return (
-        <div className="flex flex-wrap gap-4 items-center justify-start">
+        <div className="flex flex-wrap gap-4 items-center justify-start font-orbitron">
             {links.map((link, index) => (
                 <a
-                    className="text-primary-gold visited:text-primary-gold"
+                    className="text-white font-bold  visited:text-primary-gold hover:text-white focus:text-white"
                     key={index}
+                    target="blank"
                     title={link.title}
                     href={link.link}>{link.title}
                 </a>

@@ -1,6 +1,7 @@
 import DDEIcon from "@/components/DDEImg.tsx"
 import QuickLinks from "@/components/QuickLinks"
 import MyImage from "@/assets/images/myImage.jpg"
+import myCv from '@/assets/ovakporayeJosephCV.pdf'
 
 const FirstSection = () => {
     return (
@@ -21,11 +22,18 @@ const FirstSection = () => {
                 {/* TEXT SECTION */}
                 <div className="w-full flex flex-col justify-center px-2 md:w-1/2 gap-3">
                     <h1 className="font-orbitron text-primary-gold text-lg sm:text-2xl lg:text-3xl">Hi, I'm Joseph 👋<br /> Your Friendly Neighborhood Tech Bro 😎</h1>
+                    {/* BIG TEXT SECTION */}
                     <h2 className="text-white text-xl sm:text-3xl lg:text-5xl font-bold font-orbitron">Web Developer (MERN)</h2>
                     <p>
                         An alumni of the 3MTT cohort 1 software development track.
                         <br />
-                        I help startups, businesses, and organizations grow online by combining clean, responsive web development with high-impact digital marketing.                        </p>
+                        I help startups, businesses, and organizations grow online by combining clean, responsive web development with high-impact digital marketing.
+                    </p>
+                    <a 
+                    download
+                    href={myCv}
+                    type="button" 
+                    className="w-fit bg-primary-gold text-black hover:text-white font-sans glassmorphic p-2 rounded-xl ">Download CV</a>
                 </div>
             </div>
         </div>
