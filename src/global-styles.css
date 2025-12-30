@@ -2,4 +2,36 @@
     -webkit-backdrop-filter:blur(20px);
     backdrop-filter: blur(20px);
 }
+/* Slide-in from left with staggered timing */
+@keyframes slideInLeft {
+    from { transform: translateX(-24px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideOutLeft {
+    from { transform: translateX(0); opacity: 1; }
+    to { transform: translateX(-24px); opacity: 0; }
+}
+
+.text-item {
+    opacity: 0;
+    transform: translateX(-24px);
+}
+
+/* enter when parent has .visible */
+.visible .text-item {
+    animation-name: slideInLeft;
+    animation-duration: 420ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.2,.8,.2,1);
+    animation-delay: var(--delay, 0ms);
+}
+
+/* exit when parent has .leaving */
+.leaving .text-item {
+    animation-name: slideOutLeft;
+    animation-duration: 360ms;
+    animation-fill-mode: forwards;
+    animation-delay: var(--out-delay, 0ms);
+}
  
