@@ -7,7 +7,7 @@ const FirstSection = () => {
     return (
         <div className="w-full flex justify-center bg-dark-black flex-col items-center ">
             {/* HEADER */}
-            <div className="w-[80%] flex p-4 justify-between max-w-6xl">
+            <div className="w-[80%] flex p-4 justify-between max-w-6xl gap-4">
                 <DDEIcon />
                 <QuickLinks />
             </div>
