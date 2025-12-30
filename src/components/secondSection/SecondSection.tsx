@@ -1,6 +1,6 @@
 import { skills } from "@/utils"
-import {motion} from "framer-motion"
-import { useState } from "react"
+import {motion, useInView} from "framer-motion"
+import { useRef, useState } from "react"
 import TechStack from "./TechStackComponent"
 import Certifications from "./certifications"
 
@@ -14,7 +14,8 @@ const SecondSection = () => {
         setCurrentInfo(info)
     }
 
-
+    const infoRef = useRef(null)
+    const isInfoInView = useInView(infoRef,{once:false})
     const infoObj = [
         { key: 'bio', label: 'Bio' },
         { key: 'stack', label: 'My Tech Stack' },
@@ -27,7 +28,12 @@ const SecondSection = () => {
             <h3 className="text-xl sm:text-3xl lg:text-5xl text-primary-gold font-bold font-orbitron pb-3">About Me</h3>
             {/* // Section containing info */}
             <div className="flex flex-col-reverse justify-center sm:flex-row max-w-6xl gap-3">
-                <div className="w-full md:w-1/3 flex flex-col items-center gap-2">
+                <motion.div 
+                ref={infoRef}
+                initial={{opacity:0, x: -200}}
+                animate={isInfoInView? {opacity:1, x: 0}:{}}
+                transition={{duration:1, ease:'easeOut'}}
+                className="w-full md:w-1/3 flex flex-col items-center gap-2">
 
                     {
                         infoObj.map((item) => (
@@ -39,7 +45,8 @@ const SecondSection = () => {
                             >{item.label}</button>
                         ))
                     }
-                </div>
+                </motion.div>
+                {/* DETAILS SECTION */}
                 <motion.div
                     className="w-full md:w-2/3 items-center justify-start p-4 bg-primary-black/60 rounded-xl glassmorphic"
                     key={currentInfo}
