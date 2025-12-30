@@ -37,7 +37,7 @@ const FifthSection = () => {
             <div
                 ref={contactRef}
                 tabIndex={-1}
-                className="w-[80%] flex p-4 justify-between max-w-6xl gap-4">
+                className="w-[80%] flex p-4 focus:border border-white/50 rounded-md justify-between max-w-6xl gap-4">
                 <QuickLinks />
                 <DDEIcon />
             </div>
