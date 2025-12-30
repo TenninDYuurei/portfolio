@@ -1,4 +1,5 @@
 import FirstSection from "./components/firstSection/FirstSection";
+import FourthSection from "./components/fourthSection/FourthSection";
 import SecondSection from "./components/secondSection/SecondSection";
 import ThirdSection from "./components/thirdSection/ThirdSection";
 
@@ -8,6 +9,7 @@ const App: React.FC = () => {
       <FirstSection/>
       <SecondSection/>
       <ThirdSection/>
+      <FourthSection/>
     </div>
   );
 }
