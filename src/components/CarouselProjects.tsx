@@ -102,7 +102,7 @@ const SlideCard: React.FC<{ project: Project }> = ({ project }) => {
             {/* glass overlay */}
             <div className="absolute inset-0 flex items-end">
                 <div className="w-full p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                    <div className="backdrop-blur-md bg-white/30 dark:bg-gray-900/40 border border-white/20 rounded-lg p-4">
+                    <div className="backdrop-blur-md bg-dark-black/30  border border-white/20 rounded-lg p-4">
                         <h3 className="text-white text-lg font-semibold drop-shadow">{project.title}</h3>
                         <p className="mt-1 text-sm text-white/90 drop-shadow">{project.description}</p>
                     </div>
