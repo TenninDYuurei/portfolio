@@ -13,7 +13,12 @@ const config: Config = {
         "primary-gold":"#9e8123",
         "secondary-gold":"#563a17",
         "dark-black":"#252628",
-      }
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        orbitron: ['Orbitron', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+      },
     },
   },
   plugins: [],
