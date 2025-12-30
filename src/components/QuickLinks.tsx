@@ -6,7 +6,7 @@ const QuickLinks = () => {
         <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-4 items-center justify-start font-orbitron">
             {links.map((link, index) => (
                 <a
-                    className="text-white font-bold  visited:text-primary-gold hover:text-white focus:text-white"
+                    className="text-white font-bold text-center visited:text-primary-gold hover:text-white focus:text-white"
                     key={index}
                     target="blank"
                     title={link.title}
