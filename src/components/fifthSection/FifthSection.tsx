@@ -26,10 +26,10 @@ const FifthSection = () => {
                     {/* Contact me button */}
                     <p
                         onClick={() => { contactRef.current?.focus(); }}
-                        className="cursor-pointer font-sans text-nowrap text-white text-center mb-4 font-bold border border-white/30 h-fit w-fit self-center p-2 bg-primary-gold/60 glassmorpic  font-orbitron rounded-xl">Contact me 👇</p>
+                        className="cursor-pointer font-sans text-nowrap text-white text-center mb-4 font-bold border border-white/30 h-fit w-fit self-center p-2 bg-primary-gold/60 glassmorpic   rounded-xl">Contact me 👇</p>
 
                     {/* View souurce code */}
-                    <p>Click <a href="https://github.com/TenninDYuurei/portfolio" target="_blank" rel="noopener noreferrer" className="text-primary-gold font-sans font-bold ">
+                    <p>Click <a href="https://github.com/TenninDYuurei/portfolio" target="_blank" rel="noopener noreferrer" className="text-primary-gold font-sans font-bold text-center">
                         here
                     </a> to view the source code for this site.</p>
                 </div>
